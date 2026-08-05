@@ -5,7 +5,10 @@ const mongoose = require("mongoose");
 const Student = require("./models/Student");
 
 const app = express();
+const cors  = require("cors");
 
+
+app.use(cors());
 app.use(express.json());
 
 mongoose
